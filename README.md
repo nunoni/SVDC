@@ -8,7 +8,7 @@ Os meus principais objetivos com este dataset são:
 - Acompanhar a "Corrida das Vacinas", comparando a velocidade e o sucesso das campanhas de vacinação entre nações.
 - Identificar padrões de reporte de dados utilizando mapas de calor temporais (sazonalidade e dias da semana).
   
-Primeiramente, estudamos o impacto das regras de contingência nos novos casos. Diferentes países tiveram diferentes níveis de contingência, e podemos analisar se as restrições (ficar em casa, distanciamento social, etc.) afetaram a quantidade de casos. O objetivo é ver se um aumento no nível de contingência levou, posteriormente, a uma diminuição de novos casos e por isso usamos Dual Axis onde temos nas Rows Stringency Index e New cases. 
+Primeiramente, estudamos o impacto das regras de contingência nos novos casos. Diferentes países tiveram diferentes níveis de contingência, e podemos analisar se as restrições (ficar em casa, distanciamento social, etc.) afetaram a quantidade de casos. O objetivo é ver se um aumento no nível de contingência levou, posteriormente, a uma diminuição de novos casos e por isso usamos Dual Axis onde temos nas Rows Stringency Index e New cases. Não dei Synchronize Axis pois os valores são muito altos para casos novos.
 
 No Heatmap, tentamos perceber em que dia da semana há mais relatos de casos. No caso de Portugal, por exemplo, nota-se um pico ao domingo. Podemos assumir então que, numa certa fase, Portugal apenas atualizava os dados dos novos casos uma vez por semana (ao domingo). Usamos filtro de país para ver apenas Portugal ou outro país e temos semana como coluna e weekday como row para conseguirmos ver por dia da semana por fim temos new cases como Color Marks.
 
@@ -20,7 +20,7 @@ Em todos estes gráficos temos a opção de filtrar e analisar outros países pa
 Adicionei também 2 banners (KPIs): um de Casos Totais e outro de Mortes Totais. Para estes, criei Calculated Fields onde somei o número máximo de casos e mortes de cada país.
 Outros Calculated Fields que criei foram a Percentagem Infetada e a Percentagem Vacinada. Estes valores foram calculados dividindo o número de pessoas totalmente vacinadas (ou infetadas) pela população total do país.
 
-https://public.tableau.com/app/profile/nuno.ni/viz/Book3_17775609382690/Dashboard1?publish=yes
+[https://public.tableau.com/app/profile/nuno.ni/viz/Book3_17775609382690/Dashboard1?publish=yes](https://public.tableau.com/app/profile/nuno.ni/viz/Book3_17775609382690/Dashboard1?publish=yes)
 
 RESULTADOS: 
 <img width="2159" height="1289" alt="image" src="https://github.com/user-attachments/assets/525f656b-c5e8-49cc-8412-c6c3c4f7c4a3" />
