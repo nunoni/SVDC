@@ -1,4 +1,6 @@
 SVDC - Exercício
+
+UTILIZEI O CSV DO COVID, NAO CONSIGO DAR UPLOAD POR CAUSA DO TAMANHO
 Os meus principais objetivos com este dataset são:
 
 - Analisar a eficácia das medidas de restrição (confinamentos/lockdowns) em relação ao surgimento de novos casos.
@@ -10,9 +12,9 @@ Primeiramente, estudamos o impacto das regras de contingência nos novos casos. 
 
 No Heatmap, tentamos perceber em que dia da semana há mais relatos de casos. No caso de Portugal, por exemplo, nota-se um pico ao domingo. Podemos assumir então que, numa certa fase, Portugal apenas atualizava os dados dos novos casos uma vez por semana (ao domingo). Usamos filtro de país para ver apenas Portugal ou outro país e temos semana como coluna e weekday como row para conseguirmos ver por dia da semana por fim temos new cases como Color Marks.
 
-Temos outro gráfico onde comparamos a velocidade a que a vacina foi administrada à população. Podemos reparar que, em países de baixo rendimento (Lower Income Countries), a velocidade de vacinação foi muito inferior em relação à de países com mais recursos. Portugal teve um bom desempenho neste aspeto, alcançando até uma percentagem de vacinação superior à de países como a Alemanha.
+Temos outro gráfico onde comparamos a velocidade a que a vacina foi administrada à população. Podemos reparar que, em países de baixo rendimento (Lower Income Countries), a velocidade de vacinação foi muito inferior em relação à de países com mais recursos. Portugal teve um bom desempenho neste aspeto, alcançando até uma percentagem de vacinação superior à de países como a Alemanha. Para este cálculo vamos analisar a percentagem de população vacinada ao longo do tempo criando uma calculated field.
 
-Através do mapa, podemos observar a percentagem da população infetada, sendo visível que, em Portugal, mais de metade da população já teve COVID-19.
+Através do mapa, podemos observar a percentagem da população infetada, sendo visível que, em Portugal, mais de metade da população já teve COVID-19. Para este cálculo divido a população infetada pela população máxima.
 
 Em todos estes gráficos temos a opção de filtrar e analisar outros países para além de Portugal.
 Adicionei também 2 banners (KPIs): um de Casos Totais e outro de Mortes Totais. Para estes, criei Calculated Fields onde somei o número máximo de casos e mortes de cada país.
